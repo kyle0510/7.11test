@@ -1,0 +1,2 @@
+When you first learn python coding, you usually write down something as following:
+print("Hello world!")
