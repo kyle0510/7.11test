@@ -1,0 +1,21 @@
+import random
+
+def dice_game():
+    player_alive = True  
+    rolls = 3  
+
+    for _ in range(rolls):
+        roll = random.randint(1, 6)  
+        print("你擲出了骰子，點數為：" + str(roll))
+
+        if roll == 4:
+            print("很不幸，你擲到了4，你死亡了！")
+            player_alive = False
+            break
+
+    if player_alive:
+        print("恭喜你，你在三次擲骰中都沒有擲到4，你勝利了！")
+    else:
+        print("遊戲結束")
+
+dice_game()
